@@ -31,7 +31,12 @@ const webcam = {
 				video: {
 					// width: { min: this.width, ideal: this.width },
 					// height: { min: this.height, ideal: this.height},
-					optional: [{sourceId: videoSource}]
+					optional: [
+						{sourceId: videoSource},
+						{minWidth: 1280},
+						{minHeight: 720},
+						{minFrameRate: 30}
+					]
 				}
 			};
 
