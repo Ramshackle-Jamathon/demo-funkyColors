@@ -4,95 +4,7 @@ import vertexShader from "./shaders/scene.vert";
 import fragmentShader from "./shaders/scene.frag";
 import Stats from "stats.js";
 import glTexture2d from "gl-texture2d";
-
-
-const webcam = {
-	stream: undefined,
-	hasUserMedia: false,
-	video: document.createElement("video"),
-	requestUserMedia: function() {
-		navigator.getUserMedia = navigator.getUserMedia ||
-			navigator.webkitGetUserMedia ||
-			navigator.mozGetUserMedia ||
-			navigator.msGetUserMedia;
-
-		let handleUserMedia = (error, stream) => {
-			if (error) {
-				console.error(error);
-				return;
-			}
-			this.video.src = window.URL.createObjectURL(stream);
-			this.stream = stream;
-			this.hasUserMedia = true;
-		};
-
-		let sourceSelected = (audioSource, videoSource) => {
-			let constraints = {
-				video: {
-					// width: { min: this.width, ideal: this.width },
-					// height: { min: this.height, ideal: this.height},
-					optional: [
-						{sourceId: videoSource},
-						{minWidth: 1280},
-						{minHeight: 720},
-						{minFrameRate: 30}
-					]
-				}
-			};
-
-			if (false) {
-				constraints.audio = {
-					optional: [{sourceId: audioSource}]
-				};
-			}
-
-			navigator.getUserMedia(constraints, (stream) => {
-				handleUserMedia(null, stream);
-			}, (e) => {
-				instance.handleUserMedia(e);
-			});
-		};
-
-		if (this.audioSource && this.videoSource) {
-			sourceSelected(this.audioSource, this.videoSource);
-		} else {
-			if ("mediaDevices" in navigator) {
-				navigator.mediaDevices.enumerateDevices().then((devices) => {
-					let audioSource = null;
-					let videoSource = null;
-
-					devices.forEach((device) => {
-						if (device.kind === "audio") {
-							audioSource = device.id;
-						} else if (device.kind === "video") {
-							videoSource = device.id;
-						}
-					});
-
-					sourceSelected(audioSource, videoSource);
-				})
-				.catch((error) => {
-					console.log(`${error.name}: ${error.message}`); // eslint-disable-line no-console
-				});
-			} else {
-				MediaStreamTrack.getSources((sources) => {
-					let audioSource = null;
-					let videoSource = null;
-
-					sources.forEach((source) => {
-						if (source.kind === "audio") {
-							audioSource = source.id;
-						} else if (source.kind === "video") {
-							videoSource = source.id;
-						}
-					});
-
-					sourceSelected(audioSource, videoSource);
-				});
-			}
-		}
-	}
-};
+import Webcam from "keep-rollin";
 
 const demo = {
 	stats: new Stats(),
@@ -104,7 +16,7 @@ const demo = {
 	startTime: undefined,
 	ellapsedTime: undefined,
 	gl: undefined,
-	webcam,
+	webcam: new Webcam(),
 	canvas: document.body.appendChild(document.createElement("canvas")),
 	ui: document.body.appendChild(document.createElement("input")),
 	createContext: function(){

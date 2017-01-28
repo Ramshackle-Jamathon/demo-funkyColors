@@ -1272,10 +1272,6 @@ es6-map@^0.1.3:
     es6-symbol "~3.1.0"
     event-emitter "~0.3.4"
 
-es6-object-assign@^1.0.1:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/es6-object-assign/-/es6-object-assign-1.0.3.tgz#40a192e0fda5ee44ee8cf6f5b5d9b47cd0f69b14"
-
 es6-set@~0.1.3:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/es6-set/-/es6-set-0.1.4.tgz#9516b6761c2964b92ff479456233a247dc707ce8"
@@ -1658,12 +1654,6 @@ getpass@^0.1.1:
   resolved "https://registry.yarnpkg.com/getpass/-/getpass-0.1.6.tgz#283ffd9fc1256840875311c1b60e8c40187110e6"
   dependencies:
     assert-plus "^1.0.0"
-
-getusermedia@^1.3.5:
-  version "1.3.7"
-  resolved "https://registry.yarnpkg.com/getusermedia/-/getusermedia-1.3.7.tgz#4725734bab7a603b76b5b2626567273cc6da95a0"
-  dependencies:
-    webrtc-adapter "^1.0.1"
 
 gl-buffer@2.1.2:
   version "2.1.2"
@@ -2194,6 +2184,10 @@ jsprim@^1.2.2:
     extsprintf "1.0.2"
     json-schema "0.2.3"
     verror "1.3.6"
+
+keep-rollin@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/keep-rollin/-/keep-rollin-0.0.3.tgz#109da1d000813b47ae961b2b5084857c214f8b82"
 
 kind-of@^3.0.2:
   version "3.1.0"
@@ -3025,10 +3019,6 @@ rx-lite@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/rx-lite/-/rx-lite-3.1.2.tgz#19ce502ca572665f3b647b10939f97fd1615f102"
 
-sdp@^1.0.0:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/sdp/-/sdp-1.0.2.tgz#2586c8889fedbcd8448c95754c1e34fb12f97ffe"
-
 select-hose@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/select-hose/-/select-hose-2.0.0.tgz#625d8658f865af43ec962bfc376a37359a4994ca"
@@ -3543,13 +3533,6 @@ weakmap-shim@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/weakmap-shim/-/weakmap-shim-1.1.1.tgz#d65afd784109b2166e00ff571c33150ec2a40b49"
 
-webcam-grabber@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/webcam-grabber/-/webcam-grabber-0.1.1.tgz#5e210929322a18f06d6a34f55a529c03c8b6aecd"
-  dependencies:
-    es6-object-assign "^1.0.1"
-    getusermedia "^1.3.5"
-
 webpack-dev-middleware@^1.9.0:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/webpack-dev-middleware/-/webpack-dev-middleware-1.9.0.tgz#a1c67a3dfd8a5c5d62740aa0babe61758b4c84aa"
@@ -3611,12 +3594,6 @@ webpack@2.2.0-rc.0:
     watchpack "^1.0.0"
     webpack-sources "^0.1.0"
     yargs "^6.0.0"
-
-webrtc-adapter@^1.0.1:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/webrtc-adapter/-/webrtc-adapter-1.4.0.tgz#58289a63d054c65b36fb0ef389ea2f6d0c7f5d98"
-  dependencies:
-    sdp "^1.0.0"
 
 websocket-driver@>=0.5.1:
   version "0.6.5"
