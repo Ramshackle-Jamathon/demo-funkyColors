@@ -32,6 +32,6 @@
     "shader-loader": "^1.3.0",
     "html-webpack-plugin": "2.26.0",
     "webpack": "2.2.0-rc.0",
-    "webpack-dev-server": "2.2.0-rc.0"
+    "webpack-dev-server": "2.5.1"
   }
 }
