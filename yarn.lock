@@ -58,10 +58,6 @@ align-text@^0.1.1, align-text@^0.1.3:
     longest "^1.0.1"
     repeat-string "^1.5.2"
 
-amdefine@>=0.0.4:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
-
 ansi-escapes@^1.1.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-1.4.0.tgz#d3a8a83b319aa67793662b13e761c7911422306e"
@@ -662,9 +658,9 @@ block-stream@*:
   dependencies:
     inherits "~2.0.0"
 
-bluebird@^3.4.6:
-  version "3.4.6"
-  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.4.6.tgz#01da8d821d87813d158967e743d5fe6c62cf8c0f"
+bluebird@^3.4.7:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.1.tgz#d9551f9de98f1fcda1e683d17ee91a0602ee2eb9"
 
 bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.4.0:
   version "4.11.6"
@@ -849,12 +845,11 @@ circular-json@^0.3.0:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/circular-json/-/circular-json-0.3.1.tgz#be8b36aefccde8b3ca7aa2d6afc07a37242c0d2d"
 
-clean-css@3.4.x:
-  version "3.4.23"
-  resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-3.4.23.tgz#604fbbca24c12feb59b02f00b84f1fb7ded6d001"
+clean-css@4.1.x:
+  version "4.1.9"
+  resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.1.9.tgz#35cee8ae7687a49b98034f70de00c4edd3826301"
   dependencies:
-    commander "2.8.x"
-    source-map "0.4.x"
+    source-map "0.5.x"
 
 cli-cursor@^1.0.1:
   version "1.0.2"
@@ -896,13 +891,11 @@ combined-stream@^1.0.5, combined-stream@~1.0.5:
   dependencies:
     delayed-stream "~1.0.0"
 
-commander@2.8.x:
-  version "2.8.1"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-2.8.1.tgz#06be367febfda0c330aa1e2a072d3dc9762425d4"
-  dependencies:
-    graceful-readlink ">= 1.0.0"
+commander@2.11.x, commander@~2.11.0:
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.11.0.tgz#157152fd1e7a6c8d98a5b715cf376df928004563"
 
-commander@2.9.x, commander@^2.9.0:
+commander@^2.9.0:
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.9.0.tgz#9c99094176e12240cb22d6c5146098400fe0f7d4"
   dependencies:
@@ -1315,18 +1308,18 @@ escope@^3.6.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-loader@1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/eslint-loader/-/eslint-loader-1.6.1.tgz#96c47c812772eeb077e3a81681818e671a2cabf5"
+eslint-loader@1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/eslint-loader/-/eslint-loader-1.6.2.tgz#7a27cc737e547656896bf4f90e1320a153fc3978"
   dependencies:
     find-cache-dir "^0.1.1"
-    loader-utils "^0.2.7"
+    loader-utils "^1.0.2"
     object-assign "^4.0.1"
     object-hash "^1.1.4"
 
-eslint@3.12.1:
-  version "3.12.1"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-3.12.1.tgz#507a609fe251dfefd58fda03e6dbd7e851c07581"
+eslint@3.13.0:
+  version "3.13.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-3.13.0.tgz#636925fd163c9babe2e8be7ae43caf518d469577"
   dependencies:
     babel-code-frame "^6.16.0"
     chalk "^1.1.3"
@@ -1358,7 +1351,7 @@ eslint@3.12.1:
     require-uncached "^1.0.2"
     shelljs "^0.7.5"
     strip-bom "^3.0.0"
-    strip-json-comments "~1.0.1"
+    strip-json-comments "~2.0.1"
     table "^3.7.8"
     text-table "~0.2.0"
     user-home "^2.0.0"
@@ -1676,9 +1669,9 @@ gl-format-compiler-error@^1.0.2:
     glsl-shader-name "^1.0.0"
     sprintf-js "^1.0.3"
 
-gl-shader@4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/gl-shader/-/gl-shader-4.2.0.tgz#28f77813effa0dd5cda9dab1f301d1b1cda3e87e"
+gl-shader@4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/gl-shader/-/gl-shader-4.2.1.tgz#bc9b808e9293c51b668e88de615b0c113708dc2f"
   dependencies:
     gl-format-compiler-error "^1.0.2"
     weakmap-shim "^1.1.0"
@@ -1821,27 +1814,27 @@ hpack.js@^2.1.6:
     readable-stream "^2.0.1"
     wbuf "^1.1.0"
 
-html-minifier@^3.1.0:
-  version "3.2.3"
-  resolved "https://registry.yarnpkg.com/html-minifier/-/html-minifier-3.2.3.tgz#d2ff536e24d95726c332493d8f77d84dbed85372"
+html-minifier@^3.2.3:
+  version "3.5.6"
+  resolved "https://registry.yarnpkg.com/html-minifier/-/html-minifier-3.5.6.tgz#7e4e661a09999599c7d8e8a2b8d7fb7430bb5c3e"
   dependencies:
     camel-case "3.0.x"
-    clean-css "3.4.x"
-    commander "2.9.x"
+    clean-css "4.1.x"
+    commander "2.11.x"
     he "1.1.x"
     ncname "1.0.x"
     param-case "2.1.x"
     relateurl "0.2.x"
-    uglify-js "2.7.x"
+    uglify-js "3.1.x"
 
-html-webpack-plugin@2.24.1:
-  version "2.24.1"
-  resolved "https://registry.yarnpkg.com/html-webpack-plugin/-/html-webpack-plugin-2.24.1.tgz#7f45fc678f66eac2d433f22336b4399da023b57e"
+html-webpack-plugin@2.26.0:
+  version "2.26.0"
+  resolved "https://registry.yarnpkg.com/html-webpack-plugin/-/html-webpack-plugin-2.26.0.tgz#ba97c8a66f912b85df80d2aeea65966c8bd9249e"
   dependencies:
-    bluebird "^3.4.6"
-    html-minifier "^3.1.0"
+    bluebird "^3.4.7"
+    html-minifier "^3.2.3"
     loader-utils "^0.2.16"
-    lodash "^4.16.4"
+    lodash "^4.17.3"
     pretty-error "^2.0.2"
     toposort "^1.0.0"
 
@@ -2185,9 +2178,9 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.3.6"
 
-keep-rollin@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/keep-rollin/-/keep-rollin-0.0.3.tgz#109da1d000813b47ae961b2b5084857c214f8b82"
+keep-rollin@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/keep-rollin/-/keep-rollin-0.0.5.tgz#61e6af38ee5e6b69b9ad29b6fe10c3de0d3ef2ab"
 
 kind-of@^3.0.2:
   version "3.1.0"
@@ -2226,7 +2219,7 @@ loader-runner@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/loader-runner/-/loader-runner-2.2.0.tgz#824c1b699c4e7a2b6501b85902d5b862bf45b3fa"
 
-loader-utils@^0.2.11, loader-utils@^0.2.16, loader-utils@^0.2.7:
+loader-utils@^0.2.11, loader-utils@^0.2.16:
   version "0.2.16"
   resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-0.2.16.tgz#f08632066ed8282835dff88dfb52704765adee6d"
   dependencies:
@@ -2235,13 +2228,25 @@ loader-utils@^0.2.11, loader-utils@^0.2.16, loader-utils@^0.2.7:
     json5 "^0.5.0"
     object-assign "^4.0.1"
 
+loader-utils@^1.0.2:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-1.1.0.tgz#c98aef488bcceda2ffb5e2de646d6a754429f5cd"
+  dependencies:
+    big.js "^3.1.3"
+    emojis-list "^2.0.0"
+    json5 "^0.5.0"
+
 lodash.pickby@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.pickby/-/lodash.pickby-4.6.0.tgz#7dea21d8c18d7703a27c704c15d3b84a67e33aff"
 
-lodash@^4.0.0, lodash@^4.14.0, lodash@^4.16.4, lodash@^4.17.2, lodash@^4.2.0, lodash@^4.3.0:
+lodash@^4.0.0, lodash@^4.14.0, lodash@^4.17.2, lodash@^4.2.0, lodash@^4.3.0:
   version "4.17.2"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.2.tgz#34a3055babe04ce42467b607d700072c7ff6bf42"
+
+lodash@^4.17.3:
+  version "4.17.4"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
 longest@^1.0.1:
   version "1.0.1"
@@ -3146,15 +3151,17 @@ source-map-support@^0.4.2:
   dependencies:
     source-map "^0.5.3"
 
-source-map@0.4.x:
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.4.4.tgz#eba4f5da9c0dc999de68032d8b4f76173652036b"
-  dependencies:
-    amdefine ">=0.0.4"
+source-map@0.5.x:
+  version "0.5.7"
+  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
 
 source-map@^0.5.0, source-map@^0.5.3, source-map@~0.5.1, source-map@~0.5.3:
   version "0.5.6"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.6.tgz#75ce38f52bf0733c5a7f0c118d81334a2bb5f412"
+
+source-map@~0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
 
 spdx-correct@~1.0.0:
   version "1.0.2"
@@ -3273,9 +3280,13 @@ strip-bom@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/strip-bom/-/strip-bom-3.0.0.tgz#2334c18e9c759f7bdd56fdef7e9ae3d588e68ed3"
 
-strip-json-comments@~1.0.1, strip-json-comments@~1.0.4:
+strip-json-comments@~1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-1.0.4.tgz#1e15fbcac97d3ee99bf2d73b4c656b082bbafb91"
+
+strip-json-comments@~2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
 
 supports-color@^0.2.0:
   version "0.2.0"
@@ -3406,7 +3417,14 @@ typedarray@~0.0.5:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-uglify-js@2.7.x, uglify-js@~2.7.3:
+uglify-js@3.1.x:
+  version "3.1.9"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.1.9.tgz#dffca799308cf327ec3ac77eeacb8e196ce3b452"
+  dependencies:
+    commander "~2.11.0"
+    source-map "~0.6.1"
+
+uglify-js@~2.7.3:
   version "2.7.5"
   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-2.7.5.tgz#4612c0c7baaee2ba7c487de4904ae122079f2ca8"
   dependencies:
