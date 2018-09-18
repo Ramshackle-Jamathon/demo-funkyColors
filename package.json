@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "repository": "github.com:Ramshackle-Jamathon/demo--Trip.git",
   "author": "Joseph Van Drunen <josephvandrunen@gmail.com>",
-  "keywords": ["webgl", "raymarching"],
+  "keywords": [
+    "webgl",
+    "raymarching"
+  ],
   "license": "MIT",
   "main": "index.js",
   "scripts": {
@@ -15,7 +18,7 @@
     "gl-buffer": "2.1.2",
     "gl-shader": "4.2.1",
     "gl-texture2d": "^2.1.0",
-    "keep-rollin": "^0.0.5",
+    "keep-rollin": "0.1.0",
     "stats.js": "^0.17.0"
   },
   "devDependencies": {
@@ -26,8 +29,8 @@
     "babel-preset-es2015": "6.18.0",
     "eslint": "3.13.0",
     "eslint-loader": "1.6.2",
-    "shader-loader": "^1.3.0",
     "html-webpack-plugin": "2.26.0",
+    "shader-loader": "^1.3.0",
     "webpack": "2.2.0-rc.0",
     "webpack-dev-server": "2.2.0-rc.0"
   }
